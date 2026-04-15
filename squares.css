@@ -4,12 +4,12 @@
     border: 2px solid black;
     position:relative;
 }
-#myFirstSquare{
+.square{
     width: 50px;
     height: 50px;
     border: 2px solid black;
     position:absolute;
-    background-color: red;
+    /* background-color: red;
     top:50px;
-    left: 50px;
+    left: 50px; */
 }
