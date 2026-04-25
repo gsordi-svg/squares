@@ -39,6 +39,15 @@ function addSquare () {
     squareArea.appendChild(square);
 }
 
+function changeColors() {
+    let squares = document.querySelectorAll(".square");
+
+    for (let i =0; i < squares.length; i++) {
+        squares[i].style.backgroundColor = randomColor();
+    }
+}
+
+
     //I can put a onclick and a function(this)
     //put it on the screen
    // squareArea.append(square);
