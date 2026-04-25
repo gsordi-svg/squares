@@ -24,13 +24,22 @@ function randomColor() {
 
     return "rgb(" + red + "," + green + "," + blue + ")";
 }
+function addSquare () {
+    let square = document.createElement("div");
+    square.className = "square";
 
-    //make a square
-    //let square = document.createElement("div")
-    //square.className = "square";
-    //square.style.left = parseInt(Math.random()*650)+"px";
-    //square.style.top = parseInt(Math.random()*250)+"px";
-    //square.style.backgroundColor = getRandomColor();
+    let size = parseInt(Math.random() * 11 +45);
+
+    square.style.width = size + "px";
+    square.style.height = size + "px";
+    square.style.backgroundColor = getRandomColor();
+
+    square.style.left = parseInt(Math.random() * (700 - size))+"px";
+    square.style.top = parseInt(Math.random()* (300 - size))+"px";
+    
+    squareArea.appendChild(square);
+}
+
     //I can put a onclick and a function(this)
     //put it on the screen
    // squareArea.append(square);
