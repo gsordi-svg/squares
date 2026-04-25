@@ -31,7 +31,7 @@ function addSquare () {
 
     square.style.width = size + "px";
     square.style.height = size + "px";
-    square.style.backgroundColor = getRandomColor();
+    square.style.backgroundColor = randomColor();
 
     square.style.left = parseInt(Math.random() * (700 - size))+"px";
     square.style.top = parseInt(Math.random()* (300 - size))+"px";
@@ -47,7 +47,7 @@ function addSquare () {
             square.style.zIndex = topZ;
         }
     };
-    
+
     squareArea.appendChild(square);
 }
 
