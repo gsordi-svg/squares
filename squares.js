@@ -36,6 +36,8 @@ function addSquare () {
     square.style.left = parseInt(Math.random() * (700 - size))+"px";
     square.style.top = parseInt(Math.random()* (300 - size))+"px";
     
+    topZ++;
+    square.style.zIndex = topZ;
     squareArea.appendChild(square);
 }
 
