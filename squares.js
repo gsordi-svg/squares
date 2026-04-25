@@ -6,11 +6,10 @@ window.onload = function() {
 
     document.querySelector("#addsquare").onclick = addSquare;
     document.querySelector("#changecolors").onclick = changeColors;
-
 //let squareArea = document.querySelector("#squarearea");
 //let squareArea = document.getElementById("squarearea");
 
-let squareCount = parseInt(Math.random()*21)+30; //30-50
+let squareCount = parseInt(Math.random()*21) +30; //30-50
 
 for (let i =0;i<squareCount;i++){
     addSquare();
