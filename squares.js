@@ -38,6 +38,16 @@ function addSquare () {
     
     topZ++;
     square.style.zIndex = topZ;
+
+    square.onclick = function() {
+        if (parseInt(square.style.zIndex)== topZ) {
+            squareArea.removeChild(square);
+        } else {
+            topZ++;
+            square.style.zIndex = topZ;
+        }
+    };
+    
     squareArea.appendChild(square);
 }
 
